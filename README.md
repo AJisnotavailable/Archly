@@ -21,6 +21,12 @@
   <a href="https://github.com/AJisnotavailable"><img src="https://img.shields.io/badge/Developer-AJisnotavailable-8A2BE2?style=for-the-badge&logo=github&logoColor=white" alt="Developer AJisnotavailable" /></a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/AJisnotavailable/Archly/releases/tag/v1.0.0"><img src="https://img.shields.io/badge/Release-v1.0.0%20(Latest)-blue?style=for-the-badge&logo=github" alt="Release v1.0.0" /></a>
+  <a href="https://github.com/AJisnotavailable/Archly/releases/download/v1.0.0/Archly-v1.0.0-Setup-x64.exe"><img src="https://img.shields.io/badge/Download-Windows%20Setup%20(.exe)-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Download Windows Setup" /></a>
+  <a href="https://github.com/AJisnotavailable/Archly/releases/download/v1.0.0/Archly-v1.0.0-x64.exe"><img src="https://img.shields.io/badge/Download-Standalone%20(.exe)-2EA043?style=for-the-badge&logo=windows&logoColor=white" alt="Download Standalone EXE" /></a>
+</p>
+
 ---
 
 ## 📸 Interface Preview
