@@ -19,13 +19,23 @@
     "start": "npm run start --workspace=apps/server"
   },
   "keywords": [
-    "ai",
     "archly",
+    "archly-github",
+    "archly-architecture",
+    "ai",
     "project-planner",
     "architecture-compiler",
-    "prompt-engineering"
+    "c4-model",
+    "mermaid-diagrams",
+    "tauri",
+    "system-design"
   ],
-  "author": "Archly",
+  "author": "AJisnotavailable",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AJisnotavailable/Archly.git"
+  },
+  "homepage": "https://ajisnotavailable.github.io/Archly",
   "license": "MIT",
   "devDependencies": {
     "@tauri-apps/cli": "^2.11.4"

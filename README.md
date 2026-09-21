@@ -2,10 +2,11 @@
   <img src="https://raw.githubusercontent.com/AJisnotavailable/Archly/main/logo.png" alt="Archly Logo" width="140" style="border-radius: 24px;" />
 </p>
 
-<h1 align="center">Archly</h1>
+<h1 align="center">Archly — Official GitHub Repository</h1>
 
 <p align="center">
-  <strong>Autonomous Technical Architecture Compiler & Engineering Specification Engine</strong>
+  <strong>Autonomous Technical Architecture Compiler & Engineering Specification Engine</strong><br/>
+  <em>Created by <a href="https://github.com/AJisnotavailable">AJisnotavailable</a> &bull; Official Repository: <a href="https://github.com/AJisnotavailable/Archly">github.com/AJisnotavailable/Archly</a></em>
 </p>
 
 <p align="center">
@@ -13,12 +14,14 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/AJisnotavailable/Archly/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/AJisnotavailable/Archly/ci.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=CI%20Build" alt="CI Status" /></a>
+  <a href="https://ajisnotavailable.github.io/Archly"><img src="https://img.shields.io/badge/Live%20Docs-Archly%20GitHub-3b82f6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Docs" /></a>
+  <a href="https://github.com/AJisnotavailable/Archly/stargazers"><img src="https://img.shields.io/github/stars/AJisnotavailable/Archly?style=for-the-badge&logo=github&color=gold" alt="GitHub Stars" /></a>
   <a href="#license"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License: MIT" /></a>
   <a href="https://tauri.app/"><img src="https://img.shields.io/badge/Tauri-v2.0-24C8DB?style=for-the-badge&logo=tauri&logoColor=white" alt="Tauri 2.0" /></a>
   <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 18" /></a>
   <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
-  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/TailwindCSS-v3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS" /></a>
-  <a href="https://github.com/AJisnotavailable"><img src="https://img.shields.io/badge/Developer-AJisnotavailable-8A2BE2?style=for-the-badge&logo=github&logoColor=white" alt="Developer AJisnotavailable" /></a>
+  <a href="https://github.com/AJisnotavailable"><img src="https://img.shields.io/badge/Author-AJisnotavailable-8A2BE2?style=for-the-badge&logo=github&logoColor=white" alt="Author AJisnotavailable" /></a>
 </p>
 
 <p align="center">
@@ -44,7 +47,7 @@
 
 ## ⚡ What is Archly?
 
-**Archly** is a developer platform and native desktop workstation designed for software engineers, technical founders, and product architects. 
+Welcome to the official **Archly GitHub** repository ([github.com/AJisnotavailable/Archly](https://github.com/AJisnotavailable/Archly)). **Archly** is an autonomous developer platform and native desktop workstation designed for software engineers, technical founders, and product architects. 
 
 Designing modern software typically demands dozens of hours of upfront planning before writing the first line of code: evaluating tech stacks, diagramming system architectures, designing normalized ER databases, structuring APIs, mapping state machines, organizing repositories, and formulating risk registers.
 
@@ -348,9 +351,13 @@ Archly exports:
 **Archly** was architected, engineered, and designed by:
 
 **AJisnotavailable**
-- GitHub: [@AJisnotavailable](https://github.com/AJisnotavailable)
+- **GitHub Profile**: [@AJisnotavailable](https://github.com/AJisnotavailable)
+- **Official Repository**: [github.com/AJisnotavailable/Archly](https://github.com/AJisnotavailable/Archly)
+- **Live Documentation Site**: [ajisnotavailable.github.io/Archly](https://ajisnotavailable.github.io/Archly)
 
-Contributions, feature requests, and feedback are welcome! Feel free to open an issue or submit a pull request.
+⭐ If you find Archly useful for planning your software systems, please consider giving the repo a **Star** on [GitHub](https://github.com/AJisnotavailable/Archly)!
+
+Contributions, feature requests, and feedback are always welcome! Feel free to open an issue or submit a pull request.
 
 ---
 

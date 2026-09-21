@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archly GitHub — Official Autonomous Architecture Compiler & Engineering Engine</title>
+  <meta name="description" content="Welcome to the official Archly GitHub repository (AJisnotavailable/Archly). Transform software concepts into 14-stage engineering blueprints with C4 diagrams, database schemas, REST APIs, and vector PDFs. Download v1.0.0." />
+  <meta name="keywords" content="archly github, archly, ajisnotavailable archly, archly repository, autonomous architecture compiler, software architecture generator, system design interview, c4 model, mermaid diagrams, tauri 2.0" />
+  <meta name="author" content="AJisnotavailable" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://github.com/AJisnotavailable/Archly" />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/AJisnotavailable/Archly" />
+  <meta property="og:title" content="Archly GitHub — Autonomous Architecture Compiler" />
+  <meta property="og:description" content="Official Archly GitHub repository: 14-stage technical architecture compiler, C4 Mermaid diagrams, database schemas, and native Windows desktop app." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/AJisnotavailable/Archly/main/archly_1.png" />
+  <meta property="og:site_name" content="Archly GitHub" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@AJisnotavailable" />
+  <meta name="twitter:title" content="Archly GitHub — Official Repository" />
+  <meta name="twitter:description" content="Autonomous Technical Architecture Compiler on GitHub. Transform raw ideas into 14 implementation-ready engineering documents." />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/AJisnotavailable/Archly/main/archly_1.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Archly",
+    "alternateName": "Archly GitHub",
+    "operatingSystem": "Windows, macOS, Linux",
+    "applicationCategory": "DeveloperApplication",
+    "description": "Official Archly GitHub repository: Autonomous technical architecture compiler that converts product concepts into 14 sequential engineering blueprints.",
+    "url": "https://github.com/AJisnotavailable/Archly",
+    "downloadUrl": "https://github.com/AJisnotavailable/Archly/releases/tag/v1.0.0",
+    "softwareVersion": "1.0.0",
+    "author": {
+      "@type": "Person",
+      "name": "AJisnotavailable",
+      "url": "https://github.com/AJisnotavailable"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #07090e;
+      --panel: #0d121f;
+      --border: rgba(255, 255, 255, 0.08);
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.25);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: #f8fafc;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      line-height: 1.6;
+      background-image: radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.12) 0%, transparent 60%);
+      background-attachment: fixed;
+      padding: 0;
+      margin: 0;
+    }
+    h1, h2, h3 { font-family: 'Outfit', sans-serif; letter-spacing: -0.02em; }
+    code, pre { font-family: 'JetBrains Mono', monospace; }
+    
+    .nav-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(16px);
+      background: rgba(9, 13, 22, 0.85);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .brand img {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .nav-link {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      transition: color 0.15s;
+    }
+    .nav-link:hover { color: #fff; }
+    .btn-github {
+      background: #1e293b;
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 8px 14px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+    .btn-github:hover {
+      background: #334155;
+      border-color: #60a5fa;
+      transform: translateY(-1px);
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: #fff;
+      border: 1px solid rgba(59, 130, 246, 0.6);
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 0 20px var(--accent-glow);
+      transition: all 0.2s;
+    }
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      transform: translateY(-1px);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 24px 80px 24px;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 0 60px 0;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: #60a5fa;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 18px;
+      background: linear-gradient(to right, #ffffff, #94a3b8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #94a3b8;
+      max-width: 700px;
+      margin: 0 auto 32px auto;
+    }
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+      gap: 20px;
+      margin: 40px 0 80px 0;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+      transition: all 0.2s;
+    }
+    .card:hover {
+      border-color: rgba(59, 130, 246, 0.4);
+      transform: translateY(-2px);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+    }
+    .card-title {
+      font-size: 14px;
+      font-weight: 700;
+      margin: 12px 0 4px 0;
+      color: #f1f5f9;
+    }
+    .card-desc {
+      font-size: 12px;
+      color: #94a3b8;
+    }
+
+    .stages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+    .stage-pill {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      font-size: 13px;
+    }
+    .stage-pill strong {
+      display: block;
+      color: #60a5fa;
+      font-size: 11px;
+      margin-bottom: 4px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 24px;
+      text-align: center;
+      font-size: 13px;
+      color: #64748b;
+    }
+    .footer a {
+      color: #94a3b8;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 32px; }
+      .gallery { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="nav-bar">
+    <a href="https://github.com/AJisnotavailable/Archly" class="brand" title="Archly GitHub Repository">
+      <img src="https://raw.githubusercontent.com/AJisnotavailable/Archly/main/logo.png" alt="Archly Logo" />
+      <span>Archly</span>
+    </a>
+    <div class="nav-links">
+      <a href="https://github.com/AJisnotavailable/Archly#the-14-stage-compilation-pipeline" class="nav-link">14 Stages</a>
+      <a href="https://github.com/AJisnotavailable/Archly/releases/tag/v1.0.0" class="nav-link">Releases</a>
+      <a href="https://github.com/AJisnotavailable/Archly" class="btn-github" target="_blank" rel="noopener">
+        <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+        <span>Star on GitHub</span>
+      </a>
+      <a href="https://github.com/AJisnotavailable/Archly/releases/download/v1.0.0/Archly-v1.0.0-Setup-x64.exe" class="btn-primary">
+        <span>Download v1.0.0</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <main class="container">
+    <section class="hero">
+      <div class="badge">
+        <span>⭐ Official GitHub Repository: AJisnotavailable/Archly</span>
+      </div>
+      <h1>Autonomous Technical Architecture Compiler</h1>
+      <p>
+        Transform any raw product idea into an exhaustive, 14-stage engineering specification with live C4 Mermaid diagrams, normalized database schemas, REST APIs, and vector PDFs.
+      </p>
+      <div class="hero-actions">
+        <a href="https://github.com/AJisnotavailable/Archly/releases/download/v1.0.0/Archly-v1.0.0-Setup-x64.exe" class="btn-primary">
+          <span>Download Windows Setup (.exe)</span>
+        </a>
+        <a href="https://github.com/AJisnotavailable/Archly" class="btn-github">
+          <span>View Source on GitHub</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Screenshot Gallery -->
+    <section class="gallery">
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/AJisnotavailable/Archly/main/archly_1.png" alt="Archly Studio Workspace on GitHub" />
+        <div class="card-title">Studio Workspace & Live Pacing</div>
+        <div class="card-desc">Obsidian & Indigo developer UI with multi-engine BYOK (Groq, NVIDIA NIM, OpenRouter, Local Ollama).</div>
+      </div>
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/AJisnotavailable/Archly/main/archly_2.png" alt="14-Stage Architecture Pipeline" />
+        <div class="card-title">14-Stage Autonomous Pipeline</div>
+        <div class="card-desc">Dynamic context synthesis across all stages with live 60fps token streaming.</div>
+      </div>
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/AJisnotavailable/Archly/main/archly_3.png" alt="Architecture Viewer with Mermaid Engine" />
+        <div class="card-title">Interactive Diagram Viewer</div>
+        <div class="card-desc">C4 topologies, ER diagrams, sequence flows, state machines, and Gantt charts.</div>
+      </div>
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/AJisnotavailable/Archly/main/archly_4.png" alt="Prompt Engineering Lab & Registry" />
+        <div class="card-title">Prompt Engineering Lab</div>
+        <div class="card-desc">Fine-tune and persist custom meta-prompt directives for every single stage.</div>
+      </div>
+    </section>
+
+    <!-- 14 Stages Section -->
+    <section>
+      <h2 style="font-size: 26px; text-align: center; margin-bottom: 8px;">The 14-Stage Compilation Pipeline</h2>
+      <p style="text-align: center; color: #94a3b8; font-size: 14px;">Every document builds sequentially on prior decisions with zero cross-document hallucinations.</p>
+      
+      <div class="stages-grid">
+        <div class="stage-pill"><strong>STAGE 01</strong>Requirement Scope & Questionnaire</div>
+        <div class="stage-pill"><strong>STAGE 02</strong>Research & Discovery Strategy</div>
+        <div class="stage-pill"><strong>STAGE 03</strong>System Topology & C4 Architecture</div>
+        <div class="stage-pill"><strong>STAGE 04</strong>Tech Stack Trade-Off Matrix</div>
+        <div class="stage-pill"><strong>STAGE 05</strong>Production Schema & ER Diagrams</div>
+        <div class="stage-pill"><strong>STAGE 06</strong>RESTful & GraphQL API Contracts</div>
+        <div class="stage-pill"><strong>STAGE 07</strong>User Flows & Sequence Diagrams</div>
+        <div class="stage-pill"><strong>STAGE 08</strong>UI/UX Design Systems & Wireframes</div>
+        <div class="stage-pill"><strong>STAGE 09</strong>Production Directory & File Trees</div>
+        <div class="stage-pill"><strong>STAGE 10</strong>Milestone Roadmap & Gantt Charts</div>
+        <div class="stage-pill"><strong>STAGE 11</strong>Comprehensive QA & Testing Plans</div>
+        <div class="stage-pill"><strong>STAGE 12</strong>DevOps, CI/CD & Deployment</div>
+        <div class="stage-pill"><strong>STAGE 13</strong>8-Point Technical Risk Register</div>
+        <div class="stage-pill"><strong>STAGE 14</strong>Master Specification & README</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      Official GitHub Repository: <a href="https://github.com/AJisnotavailable/Archly">AJisnotavailable/Archly</a> &bull;
+      Engineered by <a href="https://github.com/AJisnotavailable">AJisnotavailable</a> &bull;
+      Licensed under MIT
+    </p>
+  </footer>
+
+</body>
+</html>
