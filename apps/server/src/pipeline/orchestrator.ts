@@ -58,14 +58,14 @@ export class PipelineOrchestrator extends EventEmitter {
     });
     if (!project) throw new Error(`Project ${projectId} not found`);
 
-    let stageToSkip = targetStageNumber;
-    if (!stageToSkip) {
-      const runningOrPaused = project.stages.find((s) => s.status === 'running' || s.status === 'paused');
+    let stageToSkip: number = targetStageNumber || 1;
+    if (!targetStageNumber) {
+      const runningOrPaused = (project.stages as any[]).find((s: any) => s.status === 'running' || s.status === 'paused');
       if (runningOrPaused) {
         stageToSkip = runningOrPaused.stageNumber;
       } else {
-        const completed = project.stages.filter((s) => s.status === 'completed');
-        const maxComp = completed.reduce((m, s) => Math.max(m, s.stageNumber), 1);
+        const completed = (project.stages as any[]).filter((s: any) => s.status === 'completed');
+        const maxComp = completed.reduce((m: number, s: any) => Math.max(m, s.stageNumber), 1);
         stageToSkip = Math.min(maxComp + 1, STAGE_DEFINITIONS.length);
       }
     }
