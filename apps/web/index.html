@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" class="dark" style="background-color: #06080d; color-scheme: dark;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archly — Autonomous Architecture Compiler</title>
+    <meta name="description" content="Turn any product concept into an implementation-ready 14-document technical architecture, engineering roadmap, and styling specification." />
+    
+    <!-- Critical Dark Theme CSS to prevent white flash in WebView2 / Browser -->
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      html, body {
+        background-color: #06080d !important;
+        color: #f8fafc !important;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace, sans-serif;
+      }
+      @keyframes archly-spin {
+        to { transform: rotate(360deg); }
+      }
+      .archly-preloader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: #06080d;
+        color: #f8fafc;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      .archly-spinner {
+        width: 32px;
+        height: 32px;
+        border: 2px solid rgba(59, 130, 246, 0.2);
+        border-top-color: #3b82f6;
+        border-radius: 50%;
+        animation: archly-spin 0.75s linear infinite;
+        margin-bottom: 14px;
+      }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="antialiased selection:bg-blue-600/30 selection:text-blue-200 min-h-screen">
+    <div id="root">
+      <div class="archly-preloader">
+        <img src="/logo.png" alt="Archly" style="width: 56px; height: 56px; border-radius: 10px; margin-bottom: 14px; border: 1px solid #1b2333;" />
+        <div class="archly-spinner"></div>
+        <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; color: #f8fafc; font-family: monospace;">
+          ARCHLY
+        </div>
+        <div style="font-size: 10px; color: #64748b; margin-top: 4px; font-family: monospace; letter-spacing: 0.1em; text-transform: uppercase;">
+          Ideas to Systems
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop window reload shortcuts & early diagnostic handlers -->
+    <script>
+      (function() {
+        // Enable F5 and Ctrl+R in desktop WebView2
+        window.addEventListener('keydown', function(e) {
+          if (e.key === 'F5' || ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'r')) {
+            window.location.reload();
+          }
+        });
+
+        // Diagnostic fallback if bundle script fails to execute
+        window.addEventListener('error', function(event) {
+          console.error('[Archly Init Error]:', event.error || event.message);
+          var root = document.getElementById('root');
+          if (root && root.querySelector('.archly-preloader')) {
+            root.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;padding:24px;background:#06080d;color:#f87171;font-family:monospace;text-align:center;">' +
+              '<div style="font-size:14px;font-weight:bold;margin-bottom:8px;">Runtime Initialization Error</div>' +
+              '<div style="font-size:11px;color:#94a3b8;max-width:500px;margin-bottom:16px;background:#0e121b;padding:12px;border-radius:6px;border:1px solid rgba(248,113,113,0.3);">' +
+                (event.message || 'Unknown error while loading application bundle') +
+              '</div>' +
+              '<button onclick="window.location.reload()" style="background:#2563eb;color:#ffffff;border:1px solid #3b82f6;padding:8px 16px;border-radius:4px;font-weight:bold;font-family:monospace;cursor:pointer;">Reload Application</button>' +
+            '</div>';
+          }
+        });
+      })();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

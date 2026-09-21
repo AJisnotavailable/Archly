@@ -1,0 +1,54 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "Archly",
+  "version": "0.1.0",
+  "identifier": "com.archly.desktop",
+  "build": {
+    "frontendDist": "../apps/web/dist",
+    "devUrl": "http://127.0.0.1:3000",
+    "beforeDevCommand": "npm run dev:web",
+    "beforeBuildCommand": "npm run build && npm run build:server:bin"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Archly — Autonomous Architecture Compiler",
+        "width": 1440,
+        "height": 920,
+        "minWidth": 1024,
+        "minHeight": 700,
+        "resizable": true,
+        "fullscreen": false,
+        "decorations": true,
+        "center": true,
+        "theme": "Dark"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "shortDescription": "Autonomous Architecture & Engineering Specification Compiler",
+    "longDescription": "Archly turns natural language software concepts into complete 14-stage implementation-ready technical architectures, database schemas, and engineering roadmaps.",
+    "copyright": "Copyright © 2026 Archly. All rights reserved.",
+    "category": "DeveloperTool",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "resources": {
+      "bin/archly-server.exe": "archly-server.exe",
+      "bin/dev.db": "prisma/dev.db"
+    },
+    "android": {
+      "debugApplicationIdSuffix": ".debug"
+    }
+  }
+}

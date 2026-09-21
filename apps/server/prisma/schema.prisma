@@ -1,0 +1,52 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Project {
+  id               String   @id @default(cuid())
+  userId           String?
+  title            String
+  originalPrompt   String
+  restatedIdea     String?
+  clarifyingAnswers String  @default("{}") // JSON string for SQLite compatibility
+  questions        String?  // JSON string of generated clarifying questions
+  provider         String   // "openrouter" | "groq" | "nvidia_nim" | "demo"
+  model            String
+  status           String   // "pending" | "running" | "completed" | "failed" | "partial"
+  pdfUrl           String?
+  zipUrl           String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  stages           Stage[]
+
+  @@index([createdAt])
+}
+
+model Stage {
+  id          String   @id @default(cuid())
+  projectId   String
+  project     Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  stageNumber Int
+  name        String
+  filename    String
+  contentMd   String
+  status      String   // "pending" | "running" | "completed" | "failed"
+  tokensUsed  Int?
+  durationMs  Int?
+  createdAt   DateTime @default(now())
+
+  @@unique([projectId, stageNumber])
+  @@index([projectId, stageNumber])
+}
+
+model ModelCatalogCache {
+  id         String   @id @default(cuid())
+  provider   String   @unique
+  modelsJson String   // JSON string of cached models
+  fetchedAt  DateTime @default(now())
+}

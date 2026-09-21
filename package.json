@@ -1,0 +1,33 @@
+{
+  "name": "archly-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/server & npm run dev --workspace=apps/web",
+    "dev:server": "npm run dev --workspace=apps/server",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "dev:desktop": "tauri dev",
+    "tauri": "tauri",
+    "build": "npm run build --workspaces",
+    "build:server:bin": "bun build --compile apps/server/dist/server.js --outfile src-tauri/bin/archly-server.exe",
+    "build:desktop": "tauri build --debug",
+    "package:desktop": "tauri build",
+    "start": "npm run start --workspace=apps/server"
+  },
+  "keywords": [
+    "ai",
+    "archly",
+    "project-planner",
+    "architecture-compiler",
+    "prompt-engineering"
+  ],
+  "author": "Archly",
+  "license": "MIT",
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.11.4"
+  }
+}
