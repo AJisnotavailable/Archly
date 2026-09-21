@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./logo.png" alt="Archly Logo" width="140" style="border-radius: 24px;" />
+  <img src="https://raw.githubusercontent.com/AJisnotavailable/Archly/main/logo.png" alt="Archly Logo" width="140" style="border-radius: 24px;" />
 </p>
 
 <h1 align="center">Archly</h1>
@@ -32,12 +32,12 @@
 ## 📸 Interface Preview
 
 <p align="center">
-  <img src="./archly_1.png" alt="Archly Studio Workspace" width="48%" />
-  <img src="./archly_2.png" alt="14-Stage Compilation Pipeline" width="48%" />
+  <img src="https://raw.githubusercontent.com/AJisnotavailable/Archly/main/archly_1.png" alt="Archly Studio Workspace" width="48%" />
+  <img src="https://raw.githubusercontent.com/AJisnotavailable/Archly/main/archly_2.png" alt="14-Stage Compilation Pipeline" width="48%" />
 </p>
 <p align="center">
-  <img src="./archly_3.png" alt="Interactive Architecture Viewer & Mermaid Engine" width="48%" />
-  <img src="./archly_4.png" alt="Prompt Engineering Lab & Registry" width="48%" />
+  <img src="https://raw.githubusercontent.com/AJisnotavailable/Archly/main/archly_3.png" alt="Interactive Architecture Viewer & Mermaid Engine" width="48%" />
+  <img src="https://raw.githubusercontent.com/AJisnotavailable/Archly/main/archly_4.png" alt="Prompt Engineering Lab & Registry" width="48%" />
 </p>
 
 ---
@@ -274,6 +274,72 @@ The output installers will be generated under:
 - **Client-Side Key Storage**: API keys are stored solely in your local browser storage (`localStorage`). They are never saved to disk on the backend or sent to any analytics service.
 - **Local SQLite Persistence**: All generated architecture documents, history logs, and cache entries reside in your local SQLite database.
 - **Air-Gapped Operation**: Run Archly completely disconnected from the internet using local models (Ollama, LM Studio) or Demo mode.
+
+---
+
+## ⚖️ Comparison: Archly vs. Generic LLMs vs. Manual Architecture
+
+| Capability | Archly | Generic LLMs (ChatGPT / Claude) | Manual Architecture (Visio / Docs) |
+| :--- | :---: | :---: | :---: |
+| **14-Stage Sequential Synthesis** | ✅ **Automated & Linked** | ❌ Manual prompting each time | ❌ Weeks of manual authoring |
+| **Cross-Stage Context Continuity** | ✅ **Dynamic propagation** | ❌ Context degrades & contradicts | ⚠️ Prone to human drift |
+| **Executable Mermaid Diagrams** | ✅ **Native C4, ER, Sequence, Gantt** | ⚠️ Often malformed syntax | ❌ Static diagrams only |
+| **Vector PDF & ZIP Scaffolding** | ✅ **One-click export** | ❌ Copy-paste required | ❌ Multi-tool formatting friction |
+| **Air-Gapped / Offline Operation** | ✅ **Ollama, LM Studio & Demo Mode** | ❌ Requires cloud connection | ✅ Fully offline |
+| **Bring Your Own Key (Zero Markups)** | ✅ **Direct provider rate** | ❌ Expensive subscription tiers | N/A |
+| **Native Desktop App (Tauri 2.0)** | ✅ **Fast Rust desktop runtime** | ❌ Web browser tab only | ⚠️ Heavy enterprise software |
+
+---
+
+## ❓ Frequently Asked Questions (FAQ)
+
+<details>
+<summary><strong>What is an autonomous technical architecture compiler?</strong></summary>
+<br />
+An autonomous architecture compiler decomposes an initial software concept into a complete, mathematically structured technical specification suite. Rather than generating a single unstructured summary, Archly executes 14 sequential engineering stages (Discovery, C4 Topology, Tech Stack, Database Schema, API Contracts, User Flows, QA Plan, DevOps, Risk Matrix) ensuring each stage adheres strictly to the architectural constraints established in earlier stages.
+</details>
+
+<details>
+<summary><strong>How does Archly prevent cross-document hallucinations and contradictions?</strong></summary>
+<br />
+Archly uses an adaptive <em>dynamic context feeding loop</em>. After every stage compiles, its core technical decisions (such as selected databases, protocols, authentication schemes, and table entities) are condensed into an architectural state cache that is explicitly injected into the system prompt of the subsequent stages. For example, Stage 06 (API Specifications) strictly adheres to the database models selected in Stage 05.
+</details>
+
+<details>
+<summary><strong>Can I use Archly completely offline without sharing code or keys?</strong></summary>
+<br />
+Yes! Archly supports local OpenAI-compatible endpoints like <strong>Ollama</strong> (e.g. <code>http://localhost:11434/v1</code>), <strong>LM Studio</strong>, <strong>vLLM</strong>, and <strong>LocalAI</strong>. When running with local models or in Demo Simulation Mode, zero telemetry or data packets leave your device.
+</details>
+
+<details>
+<summary><strong>Which diagram standards does Archly render?</strong></summary>
+<br />
+Archly generates interactive Mermaid.js diagrams directly within the architecture viewer:
+<ul>
+  <li><strong>C4 System Context & Container Topologies</strong>: <code>flowchart TB</code></li>
+  <li><strong>Database Entity Relationships</strong>: <code>erDiagram</code> with primary/foreign keys and field types</li>
+  <li><strong>User Journeys & Network Protocols</strong>: <code>sequenceDiagram</code></li>
+  <li><strong>System State Transitions</strong>: <code>stateDiagram-v2</code></li>
+  <li><strong>Milestone Delivery Timelines</strong>: <code>gantt</code> charts</li>
+</ul>
+</details>
+
+<details>
+<summary><strong>Can I customize or override stage system prompts?</strong></summary>
+<br />
+Yes. Archly includes a built-in <strong>Prompt Engineering Lab</strong> where developers can view, modify, and persist custom prompt directives for any of the 14 stages, including variables like <code>{{user_prompt}}</code> and <code>{{summary_of_stage_3}}</code>.
+</details>
+
+<details>
+<summary><strong>What formats can I export my specifications into?</strong></summary>
+<br />
+Archly exports:
+<ul>
+  <li><strong>Vector PDF Document</strong>: Formatted with dark engineering theme, syntax-highlighted code blocks, and diagrams.</li>
+  <li><strong>Complete Project Archive (ZIP)</strong>: Contains all raw markdown specifications, Mermaid diagram files, and starter scaffolds.</li>
+  <li><strong>Standalone Printable HTML</strong>: Self-contained, portable, zero-dependency HTML report.</li>
+</ul>
+</details>
 
 ---
 
